@@ -4,7 +4,7 @@ import './NavigationBar.css';
 
 function NavigationBar() {
     return (
-        <div>
+        <div className="nav-container">
             <Navbar fixed="top" bg="light" variant="light">
                 <Container styles={{width: "100%"}}>
                     <Navbar.Brand href="#home" className="brand">GoSolid</Navbar.Brand>

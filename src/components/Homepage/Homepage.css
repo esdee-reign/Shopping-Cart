@@ -1,0 +1,19 @@
+.homepage-container {
+    text-align: left;
+}
+
+.tagline-container {
+    position: absolute;
+    top: 32%;
+    left: 12%;
+}
+
+.tagline {
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.browse-btn {
+    border: none;
+}

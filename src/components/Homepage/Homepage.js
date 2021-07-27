@@ -1,16 +1,16 @@
 import React from 'react';
-import tshirts from '../ProductList/tshirts.json';
-import ProductCard from '../ProductCard/ProductCard'
-
-
-const [products, setProducts] = useState(tshirts);
-
-const productList = products.map(prouct => {return <ProductCard product = {product} key={product.id}/>})
+import './Homepage.css';
+import { Button } from 'react-bootstrap';
+import ProductCard from '../ProductCard/ProductCard';
 
 function Homepage() {
     return (
         <div className="homepage-container">
-            {productList}
+            <div className="tagline-container">
+                <div className="tagline">GO SOLID<br/>or go home</div>
+                <Button variant="dark" className="browse-btn">Browse Products</Button>
+            </div>
+            <ProductCard />
         </div>
     )
 }
