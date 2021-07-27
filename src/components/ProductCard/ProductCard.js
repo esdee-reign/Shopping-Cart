@@ -21,7 +21,7 @@ function ProductCard(props) {
                         </Col>
                         
                         <Col>
-                            <Button variant="outline-dark" onClick={props.addToCart}><FontAwesomeIcon icon={faCartPlus} /></Button>
+                            <Button variant="outline-dark" onClick={props.addToCart} style={{marginBottom: '10px'}}><FontAwesomeIcon icon={faCartPlus} /></Button>
                         </Col>
                     </Row>
                 </Card.Body>

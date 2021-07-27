@@ -1,7 +1,6 @@
 import React from 'react';
 import './Homepage.css';
 import { Button } from 'react-bootstrap';
-import ProductCard from '../ProductCard/ProductCard';
 
 function Homepage() {
     return (
@@ -10,7 +9,7 @@ function Homepage() {
                 <div className="tagline">GO SOLID<br/>or go home ;)</div>
                 <Button variant="dark" className="browse-btn" href="product-page">Browse Products</Button>
             </div>
-            <ProductCard />
+            <img src="https://unsplash.com/photos/eD1RNYzzUxc" />
         </div>
     )
 }
