@@ -1,14 +1,13 @@
-import Homepage from '../Homepage/Homepage';
-import NavigationBar from '../Navbar/NavigationBar';
-import ProductPage from '../ProductPage/ProductPage';
 import './App.css';
+import Homepage from '../Homepage/Homepage';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
+library.add(faCartPlus)
 
 function App() {
   return (
     <div className="App">
-      <NavigationBar />
-      {/* <Homepage /> */}
-      <ProductPage />
+      <Homepage />
     </div>
   );
 }

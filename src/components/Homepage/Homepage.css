@@ -17,3 +17,9 @@
 .browse-btn {
     border: none;
 }
+
+a {
+    text-decoration: none;
+    outline: none;
+    border:none;
+}
