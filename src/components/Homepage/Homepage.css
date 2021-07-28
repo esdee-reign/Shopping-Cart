@@ -1,11 +1,11 @@
 .homepage-container {
     text-align: left;
+    margin: 0 200px;
 }
 
 .tagline-container {
     position: absolute;
     top: 32%;
-    left: 12%;
 }
 
 .tagline {
@@ -18,13 +18,14 @@
     border: none;
 }
 
-a {
-    text-decoration: none;
-    outline: none;
-    border:none;
+
+.img-container {
+    position: absolute;
+    right: 0px;
+    margin-right: 200px;
 }
 
 img {
-    width: 400px;
-    height: 400px;
+    width: 620px;
+    height: 620px;
 }

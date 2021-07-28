@@ -6,13 +6,11 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons';
 
 function ProductCard(props) {
     const dataLoaded = props.tshirt;
-    var shadow={
-        boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19'
-    }
+
     return (
         <div>
             {dataLoaded && 
-            <Card style={{ width: '18rem', textAlign: 'center', padding: '20px' }}>
+            <Card style={{ width: '18rem', textAlign: 'center', padding: '20px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19' }}>
                 <Card.Img variant="top" src={props.tshirt.imgUrl} style={{width: '100px !important', height: '100px !important'}} />
                 <Card.Body>
                     <Row style={{position: 'absolute', bottom: '0px', width: '100%'}}>
