@@ -5,6 +5,8 @@ import './ProductPage.css';
 
 function ProductPage(props) {
     const [tshirts, setTshirts] = useState(tshirtsList);
+
+
     const displayTshirts = tshirts.map(tshirt => { return <ProductCard tshirt={tshirt} key={tshirt.id} /> })
     return (
         <div className="product-page-container">

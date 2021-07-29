@@ -1,6 +1,7 @@
 .homepage-container {
+    overflow: hidden;
     text-align: left;
-    margin: 0 200px;
+    margin: 0 100px;
 }
 
 .tagline-container {
@@ -21,11 +22,12 @@
 
 .img-container {
     position: absolute;
+    margin-top: 40px;
     right: 0px;
     margin-right: 200px;
 }
 
 img {
-    width: 620px;
-    height: 620px;
+    width: 520px;
+    height: 520px;
 }

@@ -9,8 +9,8 @@ function NavigationBar() {
                 <Container styles={{width: "100%"}}>
                     <Navbar.Brand href="/" className="brand">GoSolid</Navbar.Brand>
                     <Nav className="me-auto links">
-                        <Nav.Link href="product-page" style={{float: "right"}}>Products</Nav.Link>
-                        <Nav.Link href="#cart">Cart</Nav.Link>
+                        <Nav.Link href="product-page" style={{fontWeight: 'bold'}}>Products</Nav.Link>
+                        <Nav.Link href="cart" style={{fontWeight: 'bold'}}>Cart</Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>
