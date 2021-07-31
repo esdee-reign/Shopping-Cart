@@ -7,22 +7,20 @@ import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 import NavigationBar from '../Navbar/NavigationBar'
 import ProductPage from '../ProductPage/ProductPage'
 import Cart from '../Cart/Cart'
-import ProductCard from '../ProductCard/ProductCard';
-
 library.add(faCartPlus)
+
 
 function App() {
 
-  const [cartCount, setCartCount] = useState(0);
+  const [inCart, setInCart] = useState([ { id:'', title:'', imgUrl:'', price:'' } ]);
 
-  const productAdd = () => {
-    setCartCount(cartCount + 1);
+  const addToCart = (e) => {
+    console.log('clicked')
+    let product = [...inCart];
+    product.push({id:'', title:'', imgUrl:'', price:''});
+    setInCart(product);
   }; 
-  
-  const productDel = () => {
-    setCartCount(cartCount - 1);
-  }; 
-  console.log(cartCount)
+
   return (
     <div className="App">
         <BrowserRouter>
@@ -36,13 +34,14 @@ function App() {
 
                 <Route 
                   path="/product-page" 
-                  component={ProductPage} />
+                  render={(props) => (
+                    <ProductPage {...props} addToCart={addToCart} />
+                  )}
+                   />
 
                 <Route  
                   path="/cart" 
-                  render={(props) => (
-                    <Cart {...props} cartCount ={cartCount} productAdd={productAdd} productDel={productDel} />
-                  )} />
+                  component={Cart} />
 
             </Switch>
         </BrowserRouter>
