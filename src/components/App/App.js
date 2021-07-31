@@ -30,17 +30,15 @@ function App() {
             <Switch>
 
                 <Route 
-                  exact 
-                  path="/" 
+                  exact
+                  path="/Shopping-Cart" 
                   component={Homepage} />
 
                 <Route 
-                  exact 
                   path="/product-page" 
                   component={ProductPage} />
 
-                <Route 
-                  exact 
+                <Route  
                   path="/cart" 
                   render={(props) => (
                     <Cart {...props} cartCount ={cartCount} productAdd={productAdd} productDel={productDel} />

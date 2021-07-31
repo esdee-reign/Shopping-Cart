@@ -8,7 +8,7 @@ function NavigationBar() {
         <div className="nav-container">
             <Navbar fixed="top" bg="light" variant="light">
                 <Container styles={{width: "100%"}}>
-                    <Navbar.Brand className="brand"><Link to='/'>GoSolid</Link></Navbar.Brand>
+                    <Navbar.Brand className="brand"><Link to='/Shopping-Cart'>GoSolid</Link></Navbar.Brand>
                     <Nav className="me-auto links">
                         <Nav.Link style={{fontWeight: 'bold'}}><Link to='/product-page'>Products</Link></Nav.Link>
                         <Nav.Link style={{fontWeight: 'bold'}}><Link to='/cart'>Cart</Link></Nav.Link>
