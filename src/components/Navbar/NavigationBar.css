@@ -6,3 +6,8 @@
 .brand {
     font-weight: bold;
 }
+
+.link {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
